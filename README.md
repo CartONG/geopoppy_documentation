@@ -47,7 +47,7 @@ Un fois GeoPoppy installé sur un Raspberry Pi, il est temps de construire le mo
 >   - Nom d'utilisateur : **docker**
 >   - Mot de passe : **docker**
 
-![Connexion PG](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/2.jpg)
+![Connexion PG](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/2.JPG)
 
  4. Ouvrez cette nouvelle connexion pour voir apparaître les bases de données utilisées dans la démo. Créez un nouveau rôle dans **Roles de connexion** et attribuez lui tous les privilèges (superuser). Ce rôle sera le propriétaire de la base de données de votre projet, notez bien le nom de le mot de passe que vous lui accordez, nous en auront besoin plus tard.
  
@@ -80,7 +80,7 @@ Vous avez ainsi créé une base de donnée vierge dans pgAdmin, nous allons main
 
 Une fois la connexion créée, rendez-vous dans le menu **Gestionnaire de bases de données** de QGIS. Ouvrez le menu **PostGIS** pour voir votre base de données puis sélectionnez le schéma que vous avez créé. C'est a partir d'ici que vous pouvez commencer à créer les couches que vous voulez utiliser pour votre projet.
 
-![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/4.jpg)
+![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/4.JPG)
 
 > */!\ **Rappel concernant LizMap :** Seules les couches et tables que vous souhaitez pouvoir être éditables par l'utilisateur ont besoin d’être créées dans PostGIS. Pour les couches qui ne seront pas éditées (celles qui composent votre fond de carte par exemple), vous pouvez utiliser de simples **shapefiles** pour vous simplifier la tache.*
 
