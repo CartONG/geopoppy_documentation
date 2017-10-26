@@ -123,7 +123,7 @@ Les **outils d'édition** de champ dans QGIS sont extrêmement utiles pour const
 
 Les outils d'édition se définissent dans les **Propriétés de la couche**, onglet **Champs**. Par défaut tous les champs sont en **Edition de texte** ce qui signifie que l'utilisateur peut rentrer n'importe quelle valeur dans une zone de texte.
 
-![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.jpg)
+![edition](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.jpg)
 
 > /!\ Bien qu'il soit écrit **Edition de texte**, si le champ est de type **nombre** (decimal interger etc.) ou **date**, l'utilisateur devra tout de même rentrer le bon format de valeur.
 
@@ -181,7 +181,7 @@ Une fois votre projet fini et le fichier de configuration Lizmap créé grâce a
 
 5. Sélectionnez l'ensemble des fichiers dans le répertoire Site Local, faites un clic droit dessous puis cliques sur **Envoyer**.
 
-![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.jpg)
+![filezilla](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/6.jpg)
 
 6. Accédez à la page http://172.24.1.1 depuis un navigateur depuis votre ordinateur ou votre tablette pour vérifier que le projet a bien été envoyé.
 
