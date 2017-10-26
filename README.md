@@ -19,6 +19,8 @@ En terme matériel, il faut donc se doter, pour chaque collecteur de :
  2. Une carte **Micro-SD** *(nous avons utilisé des 64 Go mais une 16Go peut déjà largement suffire en fonction de la taille des jeux de données utilisés).*
  2. Un **Power-Pack** pour alimenter le Raspberry Pi sur le terrain *(nous avons utilisé des 10000 mAh qui étaient largement suffisant en terme d'autonomie).*
  3. Une **tablette tactile** *(nous avons opté pour des Samsung Galaxy Tab E avec housse de protection).*
+ 
+ ![Materiel](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/1.jpg)
 
 ## II - Installation de GeoPoppy
 
