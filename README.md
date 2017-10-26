@@ -343,7 +343,7 @@ Ce script permet, pour toutes les couches éditables de type polygone disposant 
 
 Une fois que vous disposez d'un RaspeberryPi parfaitement configué, vous pouvez cloner la microSD pour dupliquer à l'identique le projet.
 
-Une méthode en ligne de commande est expliquée ici dans la documentation de GeoPoppy : https://github.com/jancelin/geo-poppy/wiki/4.-Sauvegarde-de-la-SD mais vous pouvez également le faire à l#aide du logiciel [Win32 Disk Imager](https://filezilla-project.org/ "Win32 Disk Imager") :
+Une méthode en ligne de commande est expliquée ici dans la documentation de GeoPoppy : https://github.com/jancelin/geo-poppy/wiki/4.-Sauvegarde-de-la-SD mais vous pouvez également le faire à l'aide du logiciel [Win32 Disk Imager](https://filezilla-project.org/ "Win32 Disk Imager") :
 
  1. Insérez la MicroSD à l'aide d'un adaptateur dans votre ordinateur et ouvrez Win32 Disk Imager
  
@@ -351,7 +351,7 @@ Une méthode en ligne de commande est expliquée ici dans la documentation de Ge
  
  ![sd](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/7.JPG)
 
- 3. Pour ecrire l'image sur une autre carte, selectionnez les mêmes paramètres et clqiuez sur **Write**
+ 3. Pour ecrire l'image sur une autre carte, selectionnez les mêmes paramètres et cliquez sur **Write**
 
 
 	
