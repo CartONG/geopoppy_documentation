@@ -1,6 +1,9 @@
 
 # GeoPoppy - Guide d'installation et de configuration
 
+
+[Version PDF](https://github.com/CartONG/geopoppy_documentation/raw/master/pdf/geopoppy_install.pdf "Version PDF")
+
 *Cette documentation a été créé à la suite d'un projet financé par l'AFD durant lequel CartONG a accompagné la mise en place d'un outil de suivi et d'évaluation des parcelles agricoles basé sur GeoPoppy en Cote d'Ivoire pour l'ONG Etc Terra/Rongead.*
 
 *Elle reprend en grande partie des éléments tirés des documentations de [GeoPoppy](https://github.com/jancelin/geo-poppy/blob/master/install/README_install_geopoppy.md "GeoPoppy"), [LizMap](https://docs.3liz.com/fr/ "LizMap"), [QGIS](https://www.qgis.org/fr/docs/index.html "QGIS"), [pgAdmin](https://www.pgadmin.org/docs/ "pgAdmin") et [Docker](https://docs.docker.com/ "Docker") et a simplement vocation à proposer un pas-à-pas documenté de l'installation et de la configuration de l'outil en insistant sur quelques fonctionnalités importantes pour la réplicabilité de cette solution sur d'autres projets similaires.*
