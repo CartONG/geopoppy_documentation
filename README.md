@@ -339,16 +339,31 @@ Ce script permet, pour toutes les couches éditables de type polygone disposant 
        }
     });
 	
+## VIII - Cloner les micro SD
+
+Une fois que vous disposez d'un RaspeberryPi parfaitement configué, vous pouvez cloner la microSD pour dupliquer à l'identique le projet.
+
+Une méthode en ligne de commande est expliquée ici dans la documentation de GeoPoppy : https://github.com/jancelin/geo-poppy/wiki/4.-Sauvegarde-de-la-SD mais vous pouvez également le faire à l#aide du logiciel [Win32 Disk Imager](https://filezilla-project.org/ "Win32 Disk Imager") :
+
+ 1. Insérez la MicroSD à l'aide d'un adaptateur dans votre ordinateur et ouvrez Win32 Disk Imager
+ 
+ 2. Dans **Image File** renseignez le chemin ou vous voulez stocker l'image de la carte (le chemin doit bien finir par .img) et choisissez dans **Device** le chemin de la MicroSD. Cliquez sur **Read** pour créer l'image.
+ 
+ ![sd](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/7.JPG)
+
+ 3. Pour ecrire l'image sur une autre carte, selectionnez les mêmes paramètres et clqiuez sur **Write**
+
+
 	
-## VIII - Troubleshooting
+## IX - Troubleshooting
 
 Lors de l'utilisation de l'application, nous avons rencontré deux principaux problèmes. Cette section (qui sera amenée à evoluer) présente les solutionjs temporaires que nous avons mis en place.
 
-### VIII.1 Rafraichissement des couches
+### IX.1 Rafraichissement des couches
 
 Après plusieurs dizaines de minutes d'utilisation continue de l'application, il arrive que les couches WMS ne se rafraichissent plus lorsque l'utilisateur navigue sur la carte. La solution trouvée pour l'instant est simplement de rafraichir la page du navigateur pour relancer l'application.
 
-### VIII.2 "Service non disponible"
+### IX.2 "Service non disponible"
 
 De manière régulière, le chargement de la carte n'aboutissait pas et un message d'erreur "SERVICE NON DISPONIBLE" apparaissait en fond de l'application. Ce problème a pour l'instant été résolu en replacant le fichier **docker-compose.yml** situé dans le dossier /home/pirate du RaspberryPi par le fichier suivant : https://github.com/CartONG/geopoppy_documentation/blob/master/docker-compose/docker-compose.yml ce qui aura pour effet de fixer les adresses IP des différents containers et de rentrer http://172.18.0.7/cgi-bin/qgis_mapserv.fcgi comme URL du server WMS de LizMap dans l'interface admin de LizMap.
 
