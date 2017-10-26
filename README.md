@@ -306,7 +306,7 @@ Ce script permet, pour toutes les couches éditables disposant d'un champ **edit
 
 ### surface.js
 
-Ce script permet, pour toutes les couches éditables de type polygone disposant d'un champ **surface** de type **float** d'inscrire automatiquement son aire en hectare. Attention, le script ne fonctionne qu'à l'ouverture d'une entité existante donc si vous venez de tracer une parcelle, vous devez re-ouvrir son formulaire pour mettre a jour son aire la première fois. *Ce script fonctionne mais est très certaine améliorable ...*
+Ce script permet, pour toutes les couches éditables de type polygone disposant d'un champ **surface** de type **float** d'inscrire automatiquement son aire en hectare. Attention, le script ne fonctionne qu'à l'ouverture d'une entité existante donc si vous venez de tracer une parcelle, vous devez re-ouvrir son formulaire pour mettre a jour son aire la première fois. *Ce script fonctionne mais est très certainement améliorable ...*
 
     lizMap.events.on({
        'lizmapeditionformdisplayed': function(e){
@@ -335,3 +335,21 @@ Ce script permet, pour toutes les couches éditables de type polygone disposant 
     	}	 
        }
     });
+	
+	
+## VIII - Troubleshooting
+
+Lors de l'utilisation de l'application, nous avons rencontré deux principaux problèmes. Cette section (qui sera amenée à evoluer) présente les solutionjs temporaires que nous avons mis en place.
+
+### VIII.1 Rafraichissement des couches
+
+Après plusieurs dizaines de minutes d'utilisation continue de l'application, il arrive que les couches WMS ne se rafraichissent plus lorsque l'utilisateur navigue sur la carte. La solution trouvée pour l'instant est simplement de rafraichir la page du navigateur pour relancer l'application.
+
+### VIII.2 "Service non disponible"
+
+De manière régulière, le chargement de la carte n'aboutissait pas et un message d'erreur "SERVICE NON DISPONIBLE" apparaissait en fond de l'application. Ce problème a pour l'instant été résolu en replacant le fichier **docker-compose.yml** situé dans le dossier /home/pirate du RaspberryPi par le fichier suivant : https://github.com/CartONG/geopoppy_documentation/blob/master/docker-compose/docker-compose.yml ce qui aura pour effet de fixer les adresses IP des différents containers et de rentrer http://172.18.0.7/cgi-bin/qgis_mapserv.fcgi comme URL du server WMS de LizMap dans l'interface admin de LizMap.
+
+> Attention, tant que vous ne rencontrez pas ce problème, ne touchez pas au fichier docker-compose.yml. De plus, cette solution est pour l'instant temporaire, suivez l'evolution de la résolution de ce bug ici : https://github.com/jancelin/geo-poppy/issues/18
+
+
+
