@@ -351,13 +351,13 @@ Une méthode en ligne de commande est expliquée ici dans la documentation de Ge
  
  ![sd](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/7.JPG)
 
- 3. Pour ecrire l'image sur une autre carte, selectionnez les mêmes paramètres et cliquez sur **Write**
+ 3. Pour ecrire l'image sur une autre carte, selectionnez les mêmes paramètres et cliquez sur **Write**.
 
 
 	
 ## IX - Troubleshooting
 
-Lors de l'utilisation de l'application, nous avons rencontré deux principaux problèmes. Cette section (qui sera amenée à evoluer) présente les solutionjs temporaires que nous avons mis en place.
+Lors de l'utilisation de l'application, nous avons rencontré deux principaux problèmes. Cette section (qui sera amenée à evoluer) présente les solutions temporaires que nous avons mis en place.
 
 ### IX.1 Rafraichissement des couches
 
