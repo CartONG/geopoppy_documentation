@@ -47,6 +47,8 @@ Un fois GeoPoppy installé sur un Raspberry Pi, il est temps de construire le mo
 >   - Nom d'utilisateur : **docker**
 >   - Mot de passe : **docker**
 
+![Connexion PG](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/2.jpg)
+
  4. Ouvrez cette nouvelle connexion pour voir apparaître les bases de données utilisées dans la démo. Créez un nouveau rôle dans **Roles de connexion** et attribuez lui tous les privilèges (superuser). Ce rôle sera le propriétaire de la base de données de votre projet, notez bien le nom de le mot de passe que vous lui accordez, nous en auront besoin plus tard.
  
  5. Créez une **nouvelle base de données**, nommez-la comme vous le souhaitez et choisissez comme propriétaire le rôle précédemment créé.
@@ -62,6 +64,8 @@ Vous avez ainsi créé une base de donnée vierge dans pgAdmin, nous allons main
  
  2. Une fois installé, ouvrez QGIS et cliquez sur **Ajouter une couche PostGIS** puis sur **Nouveau** dans la fenêtre qui s'ouvre.
  
+ ![PostGIS](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/3.jpg)
+ 
  3. Créez une nouvelle connexion en utilisant les paramètres suivants :
 
 > 	- Nom : **geopoppy**
@@ -75,6 +79,8 @@ Vous avez ainsi créé une base de donnée vierge dans pgAdmin, nous allons main
 ### III.2 - Créer les couches dans QGIS
 
 Une fois la connexion créée, rendez-vous dans le menu **Gestionnaire de bases de données** de QGIS. Ouvrez le menu **PostGIS** pour voir votre base de données puis sélectionnez le schéma que vous avez créé. C'est a partir d'ici que vous pouvez commencer à créer les couches que vous voulez utiliser pour votre projet.
+
+![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/4.jpg)
 
 > */!\ **Rappel concernant LizMap :** Seules les couches et tables que vous souhaitez pouvoir être éditables par l'utilisateur ont besoin d’être créées dans PostGIS. Pour les couches qui ne seront pas éditées (celles qui composent votre fond de carte par exemple), vous pouvez utiliser de simples **shapefiles** pour vous simplifier la tache.*
 
@@ -116,6 +122,8 @@ Vous pouvez également ouvrir des shapefiles dans votre projet mais il ne seront
 Les **outils d'édition** de champ dans QGIS sont extrêmement utiles pour construire un formulaire d’édition qui soit le plus simple et intuitif pour l'utilisateur de l'application. Ils permettent notamment de créer des menus déroulants ou des réponses à choix multiple. Ainsi, il est important de passer en revue l'intégralités des champs des couches éditables pour choisir l'outil d'édition qui correspond le mieux.
 
 Les outils d'édition se définissent dans les **Propriétés de la couche**, onglet **Champs**. Par défaut tous les champs sont en **Edition de texte** ce qui signifie que l'utilisateur peut rentrer n'importe quelle valeur dans une zone de texte.
+
+![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.jpg)
 
 > /!\ Bien qu'il soit écrit **Edition de texte**, si le champ est de type **nombre** (decimal interger etc.) ou **date**, l'utilisateur devra tout de même rentrer le bon format de valeur.
 
@@ -172,6 +180,8 @@ Une fois votre projet fini et le fichier de configuration Lizmap créé grâce a
 4. Dans la navigation **Site distant**, naviguez jusqu'au dossier **/home/GeoPoppy/lizmap/project**.
 
 5. Sélectionnez l'ensemble des fichiers dans le répertoire Site Local, faites un clic droit dessous puis cliques sur **Envoyer**.
+
+![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.jpg)
 
 6. Accédez à la page http://172.24.1.1 depuis un navigateur depuis votre ordinateur ou votre tablette pour vérifier que le projet a bien été envoyé.
 
