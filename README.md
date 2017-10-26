@@ -80,7 +80,7 @@ Vous avez ainsi créé une base de donnée vierge dans pgAdmin, nous allons main
 
 Une fois la connexion créée, rendez-vous dans le menu **Gestionnaire de bases de données** de QGIS. Ouvrez le menu **PostGIS** pour voir votre base de données puis sélectionnez le schéma que vous avez créé. C'est a partir d'ici que vous pouvez commencer à créer les couches que vous voulez utiliser pour votre projet.
 
-![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/4.JPG)
+![BD](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/4.jpg)
 
 > */!\ **Rappel concernant LizMap :** Seules les couches et tables que vous souhaitez pouvoir être éditables par l'utilisateur ont besoin d’être créées dans PostGIS. Pour les couches qui ne seront pas éditées (celles qui composent votre fond de carte par exemple), vous pouvez utiliser de simples **shapefiles** pour vous simplifier la tache.*
 
@@ -123,7 +123,7 @@ Les **outils d'édition** de champ dans QGIS sont extrêmement utiles pour const
 
 Les outils d'édition se définissent dans les **Propriétés de la couche**, onglet **Champs**. Par défaut tous les champs sont en **Edition de texte** ce qui signifie que l'utilisateur peut rentrer n'importe quelle valeur dans une zone de texte.
 
-![edition](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.jpg)
+![edition](https://raw.githubusercontent.com/CartONG/geopoppy_documentation/master/img/5.JPG)
 
 > /!\ Bien qu'il soit écrit **Edition de texte**, si le champ est de type **nombre** (decimal interger etc.) ou **date**, l'utilisateur devra tout de même rentrer le bon format de valeur.
 
